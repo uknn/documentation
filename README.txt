@@ -8,16 +8,25 @@ Auteurs : Samuel Forcier // David Lafrenière
    |-----------|
    
 ---WINDOWS--
-# PATH=%PATH%;C:\Program Files\Eiffel Software\EiffelStudio 7.1 GPL\gcc\windows\mingw\bin
-# -o remise2.exe "c:\users\utilisateur\documents\eiffel user files\7.1\precomp\spec\windows\EIFGENs\base-mt\W_code/mingw/precomp.lib" "C:\Program Files\Eiffel Software\EiffelStudio 7.1 GPL\library\net\spec\mingw\windows\lib\mtnet.lib" "../../../SDL-1.2.14/lib/libSDL.dll.a" "../../../SDL_mixer-1.2.12/lib/x86/SDL_mixer.dll" "../../../SDL_ttf-2.0.11/lib/x86/libfreetype-6.dll" "../../../SDL_ttf-2.0.11/lib/x86/SDL_ttf.dll" "../../../SDL_ttf-2.0.11/lib/x86/zlib1.dll" "C:\Program Files\Eiffel Software\EiffelStudio 7.1 GPL/studio/spec/windows/lib/mingw/mtwkbench.a"  
-# remise2.exe
+
+# télécharger la librairie SDL-1.2.14
+# télécharger la librairie SDL_ttf-2.0.11
+# télécharger la librairie SDL_mixer-1.2.12
+# mettre les librairies dans le dossier du projet
+# copier à partir des librairies : SDL.dll, SDL_mixer.dll, SDL_ttf.dll, zlib.dll et libfreetype-6.dll et les placer à la racine du projet
+# télécharger/installer/utiliser EiffelStudio 7.1
+# ouvrir remise 2
+# compiler
+
 
 ---LINUX---
+
 # sudo apt-get install libsdl-1.2-dev
 # sudo apt-get install libsdl-mixer1.2-dev
 # sudo apt-get install libsdl-ttf2.0-0-dev
-# gcc -o remise2 remise2.c -lsdl
-# ./remise2
+# télécharger/installer/utiliser EiffelStudio 7.1
+# ouvrir remise 2
+# compiler
 
 
    |-------------|
