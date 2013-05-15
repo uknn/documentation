@@ -1,0 +1,415 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 7.1.8.8986 GPL Edition - windows">
+<meta name="description" content="GÃªre l'affichage Ã  l'Ã©cran du programme Sert Ã  gÃªrer l'afficher des divers sprites, gÃªrer les commandes au clavier et coordonner le programme de maniÃ¨re gÃ©nÃ©rale"/>
+<meta name="author" content="Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="date" content="25 mars 2013"/>
+<meta name="revision" content="1.0"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="copyright" content="Copyright - Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="licence" content="GPL 3.0 (see http://www.gnu.org/licences/gpl-3.0.txt)"/>
+<meta name="source" content="Samuel ForcierTTTTTTDavid LafreniÃ¨re Ã/137/tudiant CÃ©gep de DrummondvilleTTÃ/137/tudiant CÃ©gep de Drummondville"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>afficher Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../stylesheet.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../pygment_trac.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../javascripts/script.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+<h1 class="title">Documentation</h1>
+</header>
+<div id="container">
+<p class="tagline"></p>
+<div id="main" role="main">
+<div class="download-bar">
+<div class="inner">
+<a href="http://uknn.github.io/documentation/index.html" class="button"><span>Acceuil</span></a>
+<a href="http://uknn.github.io/documentation/media.html" class="button"><span>Media</span></a>
+<a href="http://uknn.github.io/documentation/doc.html" class="button"><span>Documentation</span></a>
+<a href="http://uknn.github.io/documentation/dev.html" class="button"><span>Developpeur</span></a>
+<a href="http://uknn.github.io/documentation/licence.html" class="button"><span>Licence</span></a>
+<a href="http://uknn.github.io/documentation/download.html" class="download-button"><span>Download</span></a>
+</div>
+<span class="blc"></span><span class="trc"></span>
+</div>
+<article class="markdown-body">
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_flat.html">Flat</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_short.html">Contracts</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="afficher"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Gêre l'affichage à l'écran du programme</SPAN>
+		<SPAN CLASS="estring">Sert à gêrer l'afficher des divers sprites, gêrer les commandes au clavier et coordonner le programme de manière générale</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;25 mars 2013&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;1.0&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../remise2/afficher.html">AFFICHER</A>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<A CLASS="efeature" HREF="../remise2/afficher.html#f_make">make</A>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> 
+
+	<A NAME="f_make"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_make">make</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Constructeur de la classe Afficher</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_must_stop</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+			<SPAN CLASS="elocal">l_sym</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_initialisation">initialisation</A>
+			<SPAN CLASS="ekeyword">from</SPAN>
+				<SPAN CLASS="elocal">l_must_stop</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+			<SPAN CLASS="ekeyword">until</SPAN>
+				<SPAN CLASS="elocal">l_must_stop</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">loop</SPAN>
+				<SPAN CLASS="ekeyword">from</SPAN>
+				<SPAN CLASS="ekeyword">until</SPAN>
+					<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_pollevent">sdl_pollevent</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="enumber">1</SPAN>
+				<SPAN CLASS="ekeyword">loop</SPAN>
+					<SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_key_manager">key_manager</A>
+					<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_type_from_sdl_event">get_type_from_sdl_event</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_quit_const">sdl_quit_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+						<SPAN CLASS="elocal">l_must_stop</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+					<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_escape_const">sdlk_escape_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="elocal">l_must_stop</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_creation_projectile">creation_projectile</A>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_mega_mouvement">mega_mouvement</A>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_mur_invisible">mur_invisible</A>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_droite">l_bouge_droite</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_gauche">l_bouge_gauche</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute_anim">l_mega_saute_anim</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/megaman.html#f_megaman_stop">megaman_stop</A>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/enemy.html#f_mouvement_mouche">mouvement_mouche</A>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_less_equal">&lt;=</A> <SPAN CLASS="enumber">-225</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/enemy.html#f_make">make</A>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">from</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/chain.html#f_start">start</A>
+				<SPAN CLASS="ekeyword">until</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/linear.html#f_exhausted">exhausted</A>
+				<SPAN CLASS="ekeyword">loop</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_mr_collision">mr_collision</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/chain.html#f_remove">remove</A>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_objet_score">l_objet_score</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/score.html#f_point">point</A> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_objet_score">l_objet_score</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/score.html#f_point">point</A> <A CLASS="esymbol" HREF="../elks/integer_32.html#f_plus">+</A> <SPAN CLASS="enumber">5</SPAN>
+					<SPAN CLASS="ekeyword">end</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_negated">not</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/linear.html#f_exhausted">exhausted</A> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/list.html#f_forth">forth</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_affiche_sprite">affiche_sprite</A>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_projectiles_daddy">projectiles_daddy</A>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_finition">finition</A>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_fin">fin</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_affiche_sprite"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_affiche_sprite">affiche_sprite</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> s'occupe d'afficher les sprites à l'écran</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">nouveautexte</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8.html">STRING_8</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="elocal">nouveautexte</SPAN> <SPAN CLASS="esymbol">:=</SPAN> &quot;Score : &quot; <A CLASS="esymbol" HREF="../elks/string_8.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_objet_score">l_objet_score</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/score.html#f_point">point</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_out">out</A>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_texte">l_texte</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/texte.html#f_update_texte">update_texte</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">nouveautexte</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_background">l_background</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sprite_affiche">sprite_affiche</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sprite_affiche">sprite_affiche</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sprite_affiche">sprite_affiche</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_texte">l_texte</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sprite_affiche">sprite_affiche</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_creation_projectile"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_creation_projectile">creation_projectile</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gêre la création de nouveau projectile produit par megaman</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_projectile_state">l_projectile_state</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bool_tir">l_bool_tir</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/gentilprojectile.html">GENTILPROJECTILE</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/gentilprojectile.html#f_maker">maker</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="esymbol">)</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/megaman.html#f_l_direction_droite">l_direction_droite</A> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/projectile.html#f_assigne_direction_droite">assigne_direction_droite</A>
+					<SPAN CLASS="ekeyword">else</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/projectile.html#f_assigne_direction_gauche">assigne_direction_gauche</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/bag.html#f_extend">extend</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_mega_mouvement"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_mega_mouvement">mega_mouvement</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gere les animations pour le personnage principal : megaman</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute">l_mega_saute</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute_anim">l_mega_saute_anim</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute_anim">l_mega_saute_anim</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A> <A CLASS="esymbol" HREF="../elks/integer_32.html#f_plus">+</A> <SPAN CLASS="enumber">1</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/megaman.html#f_megaman_saute">megaman_saute</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="enumber">20</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute_anim">l_mega_saute_anim</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute_anim">l_mega_saute_anim</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_gauche">l_megaman_limite_gauche</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_droite">l_bouge_droite</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/megaman.html#f_megaman_droite">megaman_droite</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_droite">l_megaman_limite_droite</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_gauche">l_bouge_gauche</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/megaman.html#f_megaman_gauche">megaman_gauche</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_mur_invisible"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_mur_invisible">mur_invisible</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> delimite des murs insibles pour empêcher le joueur de sortir de l'écran</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater_equal">&gt;=</A> <SPAN CLASS="enumber">660</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_gauche">l_megaman_limite_gauche</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">else</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_gauche">l_megaman_limite_gauche</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_less_equal">&lt;=</A> <SPAN CLASS="enumber">70</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_droite">l_megaman_limite_droite</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">else</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_droite">l_megaman_limite_droite</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_projectiles_daddy"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_projectiles_daddy">projectiles_daddy</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> une fois les projectiles créer, projectiles_daddy s'occupe de les enlever quand ils sortent de l'écran. Ils gêre aussi quand un projectiles peut être créer ou non en modifiant les valeurs boolean de projectile_state utilisé par creation_projectile</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/finite.html#f_is_empty">is_empty</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">False</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">from</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/chain.html#f_start">start</A>
+				<SPAN CLASS="ekeyword">until</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/linear.html#f_exhausted">exhausted</A>
+				<SPAN CLASS="ekeyword">loop</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sprite_affiche">sprite_affiche</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">)</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/projectile.html#f_direction_projectile_droite">direction_projectile_droite</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/projectile.html#f_bouger_droite">bouger_droite</A>
+					<SPAN CLASS="ekeyword">else</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/projectile.html#f_bouger_gauche">bouger_gauche</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater_equal">&gt;=</A> <SPAN CLASS="enumber">840</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_disjuncted">or</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/active.html#f_item">item</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_less_equal">&lt;=</A> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/chain.html#f_remove">remove</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_negated">not</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/linear.html#f_exhausted">exhausted</A> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/list.html#f_forth">forth</A>
+					<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_projectile_state">l_projectile_state</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+				<SPAN CLASS="ekeyword">check</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/projectile.html#f_direction_projectile_droite">direction_projectile_droite</A> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">True</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+					<SPAN CLASS="ekeyword">if</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="enumber">150</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <SPAN CLASS="ekeyword">then</SPAN>
+						<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_projectile_state">l_projectile_state</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+					<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">elseif</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="enumber">60</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_projectile_state">l_projectile_state</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_initialisation"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_initialisation">initialisation</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> s'occupe d'initialisé les objets utilisé par la classe, d'initialisé les librairies et d'initialisé des variables utilisé dans toute la classe</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_memoire">l_memoire</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../elks/arrayed_list.html">ARRAYED_LIST</A> <SPAN CLASS="esymbol">[</SPAN><A CLASS="eclass" HREF="../remise2/gentilprojectile.html">GENTILPROJECTILE</A><SPAN CLASS="esymbol">]</SPAN><SPAN CLASS="esymbol">}</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/arrayed_list.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">0</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre">l_titre</A> <SPAN CLASS="esymbol">:=</SPAN> &quot;Megaman Zombie Edition&quot;
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre_c">l_titre_c</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre">l_titre</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_inutile">l_inutile</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_init">sdl_init</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_init_video">sdl_init_video</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_inutile">l_inutile</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_ttf_init">ttf_init</A>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_setvideomode">sdl_setvideomode</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">840</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">640</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">32</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_swsurface">sdl_swsurface</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_wm_setcaption">sdl_wm_setcaption</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre_c">l_titre_c</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_item">item</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="ekeyword">create</SPAN><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/pointer_ref.html#f_memory_calloc">memory_calloc</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sizeof_sdl_event">sizeof_sdl_event</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_background">l_background</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/background.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/megaman.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_objet_score">l_objet_score</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/score.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/enemy.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_musique">l_musique</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/musique.html#f_make">make</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_texte">l_texte</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/texte.html#f_make">make</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_finition"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_finition">finition</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> la &quot;finition&quot; effectuer a la fin de chaque tour de boucle de la boucle principal du jeu</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_inutile">l_inutile</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_flip">sdl_flip</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_memoire">l_memoire</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/memory.html#f_full_collect">full_collect</A>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_delay">sdl_delay</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="enumber">1</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_32">to_natural_32</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_fin"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_fin">fin</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> effectue certaines actions lorsque le jeu se termine</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_musique">l_musique</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sound_manager.html#f_stop_audio">stop_audio</A>
+			<SPAN CLASS="ekeyword">create</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_reseau">l_reseau</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/reseau.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_objet_score">l_objet_score</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/pointer_ref.html#f_memory_free">memory_free</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_key_manager"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_key_manager">key_manager</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gêre les entrées au clavier et se qui en résulte(par l'entremise de valeur boolean)</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_key</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="elocal">l_keysym</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="elocal">l_sym</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_type_from_sdl_event">get_type_from_sdl_event</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_keydown_const">sdl_keydown_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="elocal">l_key</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_key_from_event">get_key_from_event</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">l_keysym</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_keysym_from_keyboardevent">get_keysym_from_keyboardevent</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_key</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_sym_from_keysym">get_sym_from_keysym</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_keysym</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_space_const">sdlk_space_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bool_tir">l_bool_tir</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_right_const">sdlk_right_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_droite">l_bouge_droite</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_left_const">sdlk_left_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_gauche">l_bouge_gauche</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_up_const">sdlk_up_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute">l_mega_saute</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_type_from_sdl_event">get_type_from_sdl_event</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_keyup_const">sdl_keyup_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="elocal">l_key</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_key_from_event">get_key_from_event</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">l_keysym</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_keysym_from_keyboardevent">get_keysym_from_keyboardevent</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_key</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_sym_from_keysym">get_sym_from_keysym</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_keysym</SPAN><SPAN CLASS="esymbol">)</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_right_const">sdlk_right_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_droite">l_bouge_droite</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_left_const">sdlk_left_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_gauche">l_bouge_gauche</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_space_const">sdlk_space_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bool_tir">l_bool_tir</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_projectile_state">l_projectile_state</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+				<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="elocal">l_sym</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdlk_up_const">sdlk_up_const</A> <SPAN CLASS="ekeyword">then</SPAN>
+					<A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute">l_mega_saute</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">False</SPAN>
+				<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_l_inutile"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_inutile">l_inutile</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+
+	<A NAME="f_l_screen"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_screen">l_screen</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+
+	<A NAME="f_l_titre"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre">l_titre</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8.html">STRING_8</A>
+
+	<A NAME="f_l_titre_c"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre_c">l_titre_c</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string.html">C_STRING</A>
+
+	<A NAME="f_event"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_event">event</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+
+	<A NAME="f_l_background"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_background">l_background</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/background.html">BACKGROUND</A>
+
+	<A NAME="f_l_megaman"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman">l_megaman</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/megaman.html">MEGAMAN</A>
+
+	<A NAME="f_l_objet_score"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_objet_score">l_objet_score</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/score.html">SCORE</A>
+
+	<A NAME="f_l_gentilprojectile"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gentilprojectile">l_gentilprojectile</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/gentilprojectile.html">GENTILPROJECTILE</A>
+
+	<A NAME="f_l_mechantprojectile"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mechantprojectile">l_mechantprojectile</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/mechantprojectile.html">MECHANTPROJECTILE</A>
+
+	<A NAME="f_l_gprojectiles"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectiles">l_gprojectiles</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/list.html">LIST</A> <SPAN CLASS="esymbol">[</SPAN><A CLASS="eclass" HREF="../remise2/gentilprojectile.html">GENTILPROJECTILE</A><SPAN CLASS="esymbol">]</SPAN>
+
+	<A NAME="f_l_memoire"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_memoire">l_memoire</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/memory.html">MEMORY</A>
+
+	<A NAME="f_l_projectile_state"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_projectile_state">l_projectile_state</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_gprojectile_recent"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_gprojectile_recent">l_gprojectile_recent</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/gentilprojectile.html">GENTILPROJECTILE</A>
+
+	<A NAME="f_l_bouge_gauche"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_gauche">l_bouge_gauche</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_bouge_droite"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bouge_droite">l_bouge_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_mega_saute"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute">l_mega_saute</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_bool_tir"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_bool_tir">l_bool_tir</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_megaman_limite_gauche"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_gauche">l_megaman_limite_gauche</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_megaman_limite_droite"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_megaman_limite_droite">l_megaman_limite_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_reseau"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_reseau">l_reseau</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/reseau.html">RESEAU</A>
+
+	<A NAME="f_l_x_backup"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_x_backup">l_x_backup</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/real_32.html">REAL_32</A>
+
+	<A NAME="f_l_y_backup"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_y_backup">l_y_backup</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/real_32.html">REAL_32</A>
+
+	<A NAME="f_l_enemy"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_enemy">l_enemy</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/enemy.html">ENEMY</A>
+
+	<A NAME="f_l_mega_saute_anim"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_mega_saute_anim">l_mega_saute_anim</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+
+	<A NAME="f_l_count"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_count">l_count</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+
+	<A NAME="f_l_musique"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_musique">l_musique</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/musique.html">MUSIQUE</A>
+
+	<A NAME="f_l_texte"></A><A CLASS="efeature" HREF="../remise2/afficher.html#f_l_texte">l_texte</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/texte.html">TEXTE</A>
+	
+<SPAN CLASS="ekeyword">invariant</SPAN>
+	<SPAN CLASS="etag">l_titre_valide</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../remise2/afficher.html#f_l_titre">l_titre</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/readable_string_8.html#f_is_equal">is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;Megaman Zombie Edition&quot;<SPAN CLASS="esymbol">)</SPAN>
+
+<SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">copyright</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Copyright - Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">licence</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;GPL 3.0 (see </SPAN><A CLASS="estring" HREF="http://www.gnu.org/licences/gpl-3.0.txt">http://www.gnu.org/licences/gpl-3.0.txt</A><SPAN CLASS="estring">)&quot;</SPAN>
+	<SPAN CLASS="eitag">source</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Samuel Forcier						David Lafrenière</SPAN>
+		<SPAN CLASS="estring">Étudiant Cégep de Drummondville		Étudiant Cégep de Drummondville</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../remise2/afficher.html">AFFICHER</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_flat.html">Flat</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_short.html">Contracts</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="afficher_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="afficher"></TD>
+</TR></TABLE></FORM></pre>
+</article>
+</div>
+</div>
+<footer>
+<div class="owner">
+<p><a href="https://github.com/uknn" class="avatar"><img src="https://secure.gravatar.com/avatar/a0f7e1435e39437727876e18c9bff733?s=30&amp;d=https://a248.e.akamai.net/assets.github.com2Fimages2Fgravatars2Fgravatar-user-420.png" width="48" height="48"/></a>
+<a href="https://github.com/uknn">uknn</a> maintains <a href="https://github.com/uknn/documentation">Documentation</a></p>
+</div>
+<div class="creds">
+<small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+</div>
+</footer>
+</div>
+<div class="current-section">
+<a href="#top">Scroll to top</a>
+<a href="https://github.com/uknn/documentation/tarball/master" class="tar">tar</a><a href="https://github.com/uknn/documentation/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+<p class="name"></p>
+</div>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 7.1.8.8986 GPL Edition - windows">
+<meta name="warning" content="If you are precompiling a subset of EiffelBase, it is  preferable NOT to remove this class from the subset.  If you remove it you may see unnecessary recompilations after changes."/>
+<meta name="description" content="Class used to ensure proper precompilation of EiffelBase.  Not to be used otherwise."/>
+<meta name="library" content="Free implementation of ELKS library"/>
+<meta name="status" content="See notice at end of class."/>
+<meta name="legal" content="See notice at end of class."/>
+<meta name="date" content="$Date: 2012-05-23 21:13:10 -0700 (Wed, 23 May 2012) $"/>
+<meta name="revision" content="$Revision: 559 $"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="copyright" content="Copyright (c) 1984-2012, Eiffel Software and others"/>
+<meta name="license" content="Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"/>
+<meta name="source" content="Eiffel Software 5949 Hollister Ave., Goleta, CA 93117 USA Telephone 805-685-1006, Fax 805-685-6869 Website http://www.eiffel.com Customer support http://support.eiffel.com"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>declarator Contracts</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../stylesheet.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../pygment_trac.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../javascripts/script.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+<h1 class="title">Documentation</h1>
+</header>
+<div id="container">
+<p class="tagline"></p>
+<div id="main" role="main">
+<div class="download-bar">
+<div class="inner">
+<a href="http://uknn.github.io/documentation/index.html" class="button"><span>Acceuil</span></a>
+<a href="http://uknn.github.io/documentation/media.html" class="button"><span>Media</span></a>
+<a href="http://uknn.github.io/documentation/doc.html" class="button"><span>Documentation</span></a>
+<a href="http://uknn.github.io/documentation/dev.html" class="button"><span>Developpeur</span></a>
+<a href="http://uknn.github.io/documentation/licence.html" class="button"><span>Licence</span></a>
+<a href="http://uknn.github.io/documentation/download.html" class="download-button"><span>Download</span></a>
+</div>
+<span class="blc"></span><span class="trc"></span>
+</div>
+<article class="markdown-body">
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_links.html">Relations</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator.html">Text</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_flat.html">Flat</A></TD>
+<TD CLASS="nolink2">Contracts</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="declarator"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">warning</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">If you are precompiling a subset of EiffelBase, it is </SPAN>
+		<SPAN CLASS="estring">preferable NOT to remove this class from the subset. </SPAN>
+		<SPAN CLASS="estring">If you remove it you may see unnecessary recompilations</SPAN>
+		<SPAN CLASS="estring">after changes.</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Class used to ensure proper precompilation of EiffelBase. </SPAN>
+		<SPAN CLASS="estring">Not to be used otherwise.</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">library</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Free implementation of ELKS library&quot;</SPAN>
+	<SPAN CLASS="eitag">status</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;See notice at end of class.&quot;</SPAN>
+	<SPAN CLASS="eitag">legal</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;See notice at end of class.&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Date: 2012-05-23 21:13:10 -0700 (Wed, 23 May 2012) $&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;$Revision: 559 $&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> <SPAN CLASS="ekeyword">interface</SPAN>
+	<A CLASS="eclass" HREF="../elks/declarator_short.html">DECLARATOR</A>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<A CLASS="efeature" HREF="../elks/any_short.html#f_default_create">default_create</A>
+
+<SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">copyright</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Copyright (c) 1984-2012, Eiffel Software and others&quot;</SPAN>
+	<SPAN CLASS="eitag">license</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Eiffel Forum License v2 (see </SPAN><A CLASS="estring" HREF="http://www.eiffel.com/licensing/forum.txt">http://www.eiffel.com/licensing/forum.txt</A><SPAN CLASS="estring">)&quot;</SPAN>
+	<SPAN CLASS="eitag">source</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Eiffel Software</SPAN>
+		<SPAN CLASS="estring">5949 Hollister Ave., Goleta, CA 93117 USA</SPAN>
+		<SPAN CLASS="estring">Telephone 805-685-1006, Fax 805-685-6869</SPAN>
+		<SPAN CLASS="estring">Website </SPAN><A CLASS="estring" HREF="http://www.eiffel.com">http://www.eiffel.com</A>
+		<SPAN CLASS="estring">Customer support </SPAN><A CLASS="estring" HREF="http://support.eiffel.com">http://support.eiffel.com</A>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../elks/declarator_short.html">DECLARATOR</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_links.html">Relations</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator.html">Text</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_flat.html">Flat</A></TD>
+<TD CLASS="nolink2">Contracts</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="declarator_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="declarator"></TD>
+</TR></TABLE></FORM></pre>
+</article>
+</div>
+</div>
+<footer>
+<div class="owner">
+<p><a href="https://github.com/uknn" class="avatar"><img src="https://secure.gravatar.com/avatar/a0f7e1435e39437727876e18c9bff733?s=30&amp;d=https://a248.e.akamai.net/assets.github.com2Fimages2Fgravatars2Fgravatar-user-420.png" width="48" height="48"/></a>
+<a href="https://github.com/uknn">uknn</a> maintains <a href="https://github.com/uknn/documentation">Documentation</a></p>
+</div>
+<div class="creds">
+<small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+</div>
+</footer>
+</div>
+<div class="current-section">
+<a href="#top">Scroll to top</a>
+<a href="https://github.com/uknn/documentation/tarball/master" class="tar">tar</a><a href="https://github.com/uknn/documentation/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+<p class="name"></p>
+</div>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

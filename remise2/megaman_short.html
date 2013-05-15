@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 7.1.8.8986 GPL Edition - windows">
+<meta name="description" content="GÃªre l'affichage du personnage contrÃ´lÃ© par le joueur (megaman) Contient le chemin d'accÃ¨s au fichier graphique du personnage, ainsi que ses coordonÃ© et envoie les informations nÃ©cessaire Ã  la classe sprites pour l'affichage"/>
+<meta name="author" content="Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="date" content="25 mars 2013"/>
+<meta name="revision" content="1.0"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="copyright" content="Copyright - Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="licence" content="GPL 3.0 (see http://www.gnu.org/licences/gpl-3.0.txt)"/>
+<meta name="source" content="Samuel ForcierTTTTTTDavid LafreniÃ¨re Ã/137/tudiant CÃ©gep de DrummondvilleTTÃ/137/tudiant CÃ©gep de Drummondville"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>megaman Contracts</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../stylesheet.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../pygment_trac.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../javascripts/script.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+<h1 class="title">Documentation</h1>
+</header>
+<div id="container">
+<p class="tagline"></p>
+<div id="main" role="main">
+<div class="download-bar">
+<div class="inner">
+<a href="http://uknn.github.io/documentation/index.html" class="button"><span>Acceuil</span></a>
+<a href="http://uknn.github.io/documentation/media.html" class="button"><span>Media</span></a>
+<a href="http://uknn.github.io/documentation/doc.html" class="button"><span>Documentation</span></a>
+<a href="http://uknn.github.io/documentation/dev.html" class="button"><span>Developpeur</span></a>
+<a href="http://uknn.github.io/documentation/licence.html" class="button"><span>Licence</span></a>
+<a href="http://uknn.github.io/documentation/download.html" class="download-button"><span>Download</span></a>
+</div>
+<span class="blc"></span><span class="trc"></span>
+</div>
+<article class="markdown-body">
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_links.html">Relations</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman.html">Text</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_flat.html">Flat</A></TD>
+<TD CLASS="nolink2">Contracts</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="megaman"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Gêre l'affichage du personnage contrôlé par le joueur (megaman)</SPAN>
+		<SPAN CLASS="estring">Contient le chemin d'accès au fichier graphique du personnage, ainsi que ses coordoné et envoie les informations nécessaire à la classe sprites pour l'affichage</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;25 mars 2013&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;1.0&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> <SPAN CLASS="ekeyword">interface</SPAN>
+	<A CLASS="eclass" HREF="../remise2/megaman_short.html">MEGAMAN</A>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<A CLASS="efeature" HREF="../remise2/megaman_short.html#f_make">make</A>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Implementation</SPAN>
+
+	<A NAME="f_l_chemin_droite"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_droite">l_chemin_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_short.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers la droite</SPAN>
+
+	<A NAME="f_l_chemin_gauche"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_gauche">l_chemin_gauche</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_short.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers la gauche</SPAN>
+
+	<A NAME="f_l_chemin_haut_droite"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_haut_droite">l_chemin_haut_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_short.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers le haut et la droite</SPAN>
+
+	<A NAME="f_l_chemin_haut_gauche"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_haut_gauche">l_chemin_haut_gauche</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_short.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers le haut et la gauche</SPAN>
+
+	<A NAME="f_l_chemin_droite_c"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_droite_c">l_chemin_droite_c</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string_short.html">C_STRING</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String C contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers la droite</SPAN>
+
+	<A NAME="f_l_chemin_gauche_c"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_gauche_c">l_chemin_gauche_c</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string_short.html">C_STRING</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String C contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers la gauche</SPAN>
+
+	<A NAME="f_l_chemin_haut_droite_c"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_haut_droite_c">l_chemin_haut_droite_c</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string_short.html">C_STRING</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String C contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers le haut et la droite</SPAN>
+
+	<A NAME="f_l_chemin_haut_gauche_c"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_haut_gauche_c">l_chemin_haut_gauche_c</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string_short.html">C_STRING</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String C contenant l'emplacement du fichier contenant l'image de megaman se dirigeant vers le haut et la gauche</SPAN>
+
+	<A NAME="f_l_direction_droite"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_direction_droite">l_direction_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_short.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> indique si megaman se dirige vers la droite, sinon il se dirige vers la gauche</SPAN>
+
+	<A NAME="f_l_ptr_droite"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_ptr_droite">l_ptr_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_short.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur de l'image de megaman lorsque celui-ci se dirige vers la droite</SPAN>
+
+	<A NAME="f_l_ptr_gauche"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_ptr_gauche">l_ptr_gauche</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_short.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur de l'image de megaman lorsque celui-ci se dirige vers la gauche</SPAN>
+
+	<A NAME="f_l_ptr_haut_droite"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_ptr_haut_droite">l_ptr_haut_droite</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_short.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur de l'image de megaman lorsque celui-ci se dirige vers le haut et la droite</SPAN>
+
+	<A NAME="f_l_ptr_haut_gauche"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_ptr_haut_gauche">l_ptr_haut_gauche</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_short.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur &nbsp;de l'image de megaman lorsque celui-ci se dirige vers le haut et la gauche</SPAN>
+
+	<A NAME="f_make"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_make">make</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Constructeur de la classe megaman, initialize les paramètres de megaman</SPAN>
+
+	<A NAME="f_megaman_droite"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_megaman_droite">megaman_droite</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gêre le mouvement à droite de megaman</SPAN>
+
+	<A NAME="f_megaman_gauche"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_megaman_gauche">megaman_gauche</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gêre le mouvement à gauche de megaman</SPAN>
+
+	<A NAME="f_megaman_stop"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_megaman_stop">megaman_stop</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gêre l'arrêt du mouvement de megaman</SPAN>
+
+	<A NAME="f_megaman_saute"></A><A CLASS="efeature" HREF="../remise2/megaman_short.html#f_megaman_saute">megaman_saute</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">frame</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_short.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gêre le saut pour megaman</SPAN>
+	
+<SPAN CLASS="ekeyword">invariant</SPAN>
+	<SPAN CLASS="etag">l_chemin_droite_valide</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_droite">l_chemin_droite</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/readable_string_8_short.html#f_is_equal">is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;megamananimation.bmp&quot;<SPAN CLASS="esymbol">)</SPAN>
+	<SPAN CLASS="etag">l_chemin_gauche_valide</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_gauche">l_chemin_gauche</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/readable_string_8_short.html#f_is_equal">is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;megamananimation2.bmp&quot;<SPAN CLASS="esymbol">)</SPAN>
+	<SPAN CLASS="etag">l_chemin_haut_droite_valide</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_haut_droite">l_chemin_haut_droite</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/readable_string_8_short.html#f_is_equal">is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;megamansaute.bmp&quot;<SPAN CLASS="esymbol">)</SPAN>
+	<SPAN CLASS="etag">l_chemin_haut_gauche_valide</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../remise2/megaman_short.html#f_l_chemin_haut_gauche">l_chemin_haut_gauche</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/readable_string_8_short.html#f_is_equal">is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN>&quot;megamansaute2.bmp&quot;<SPAN CLASS="esymbol">)</SPAN>
+
+<SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">copyright</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Copyright - Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">licence</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;GPL 3.0 (see </SPAN><A CLASS="estring" HREF="http://www.gnu.org/licences/gpl-3.0.txt">http://www.gnu.org/licences/gpl-3.0.txt</A><SPAN CLASS="estring">)&quot;</SPAN>
+	<SPAN CLASS="eitag">source</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Samuel Forcier						David Lafrenière</SPAN>
+		<SPAN CLASS="estring">Étudiant Cégep de Drummondville		Étudiant Cégep de Drummondville</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../remise2/megaman_short.html">MEGAMAN</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_links.html">Relations</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman.html">Text</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_flat.html">Flat</A></TD>
+<TD CLASS="nolink2">Contracts</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="megaman_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="megaman"></TD>
+</TR></TABLE></FORM></pre>
+</article>
+</div>
+</div>
+<footer>
+<div class="owner">
+<p><a href="https://github.com/uknn" class="avatar"><img src="https://secure.gravatar.com/avatar/a0f7e1435e39437727876e18c9bff733?s=30&amp;d=https://a248.e.akamai.net/assets.github.com2Fimages2Fgravatars2Fgravatar-user-420.png" width="48" height="48"/></a>
+<a href="https://github.com/uknn">uknn</a> maintains <a href="https://github.com/uknn/documentation">Documentation</a></p>
+</div>
+<div class="creds">
+<small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+</div>
+</footer>
+</div>
+<div class="current-section">
+<a href="#top">Scroll to top</a>
+<a href="https://github.com/uknn/documentation/tarball/master" class="tar">tar</a><a href="https://github.com/uknn/documentation/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+<p class="name"></p>
+</div>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

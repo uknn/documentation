@@ -1,0 +1,559 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 7.1.8.8986 GPL Edition - windows">
+<meta name="description" content="Wrapper librairie SDL, SDL_mixer et SDL_ttf. Sert Ã  avoir accÃ¨s aux fonctions/constantes des librairies externes SDL, SDL_mixer et SDL_ttf Ã  partir de Eiffel Studio"/>
+<meta name="author" content="Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="date" content="25 mars 2013"/>
+<meta name="revision" content="1.0"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="copyright" content="Copyright - Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="licence" content="GPL 3.0 (see http://www.gnu.org/licences/gpl-3.0.txt)"/>
+<meta name="source" content="Samuel ForcierTTTTTTDavid LafreniÃ¨re Ã/137/tudiant CÃ©gep de DrummondvilleTTÃ/137/tudiant CÃ©gep de Drummondville"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>rapper Flat contracts</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../stylesheet.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../pygment_trac.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../javascripts/script.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+<h1 class="title">Documentation</h1>
+</header>
+<div id="container">
+<p class="tagline"></p>
+<div id="main" role="main">
+<div class="download-bar">
+<div class="inner">
+<a href="http://uknn.github.io/documentation/index.html" class="button"><span>Acceuil</span></a>
+<a href="http://uknn.github.io/documentation/media.html" class="button"><span>Media</span></a>
+<a href="http://uknn.github.io/documentation/doc.html" class="button"><span>Documentation</span></a>
+<a href="http://uknn.github.io/documentation/dev.html" class="button"><span>Developpeur</span></a>
+<a href="http://uknn.github.io/documentation/licence.html" class="button"><span>Licence</span></a>
+<a href="http://uknn.github.io/documentation/download.html" class="download-button"><span>Download</span></a>
+</div>
+<span class="blc"></span><span class="trc"></span>
+</div>
+<article class="markdown-body">
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_links.html">Relations</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper.html">Text</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_flat.html">Flat</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_short.html">Contracts</A></TD>
+<TD CLASS="nolink2">Flat contracts</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="rapper"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Wrapper librairie SDL, SDL_mixer et SDL_ttf.</SPAN>
+		<SPAN CLASS="estring">Sert à avoir accès aux fonctions/constantes des librairies externes SDL, SDL_mixer et SDL_ttf à partir de Eiffel Studio</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;25 mars 2013&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;1.0&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">class</SPAN> <SPAN CLASS="ekeyword">interface</SPAN>
+	<A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A>
+
+<SPAN CLASS="ekeyword">create</SPAN> 
+	<A NAME="f_default_create"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_default_create">default_create</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Process instances of classes with no creation clause.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> (Default: do nothing.)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Access</SPAN>
+
+	<A NAME="f_generating_type"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_generating_type">generating_type</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/type_flatshort.html">TYPE</A> <SPAN CLASS="esymbol">[</SPAN><A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">]</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Type of current object</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> (type of which it is a direct instance)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">generating_type_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+
+	<A NAME="f_generator"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_generator">generator</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_flatshort.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Name of current object's generating class</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> (base class of the type of which it is a direct instance)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">generator_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+			<SPAN CLASS="etag">generator_not_empty</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_negated">not</A> <SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/finite_flatshort.html#f_is_empty">is_empty</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Comparison</SPAN>
+
+	<A NAME="f_deep_equal"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_equal">deep_equal</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">like</SPAN> arg #<SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Are </SPAN>`a'<SPAN CLASS="ecomment"> and </SPAN>`b'<SPAN CLASS="ecomment"> either both void</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> or attached to isomorphic object structures?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">shallow_implies_deep</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_equal">standard_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="ekeyword">Result</SPAN>
+			<SPAN CLASS="etag">both_or_none_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">b</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="etag">same_type</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">b</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted_semistrict">and then</A> <SPAN CLASS="elocal">a</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_same_type">same_type</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="etag">symmetric</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_equal">deep_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">a</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_equal"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_equal">equal</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">like</SPAN> arg #<SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Are </SPAN>`a'<SPAN CLASS="ecomment"> and </SPAN>`b'<SPAN CLASS="ecomment"> either both void or attached</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> to objects considered equal?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">definition</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted">and</A> <SPAN CLASS="elocal">b</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_disjuncted_semistrict">or else</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted">and</A> <SPAN CLASS="elocal">b</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted_semistrict">and then</A> <SPAN CLASS="elocal">a</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_is_equal">is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_is_deep_equal"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_is_deep_equal">is_deep_equal</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Are </SPAN>`Current'<SPAN CLASS="ecomment"> and </SPAN>`other'<SPAN CLASS="ecomment"> attached to isomorphic object structures?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">shallow_implies_deep</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="ekeyword">Result</SPAN>
+			<SPAN CLASS="etag">same_type</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_same_type">same_type</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="etag">symmetric</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="elocal">other</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_is_deep_equal">is_deep_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_is_equal"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_is_equal">is_equal</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Is </SPAN>`other'<SPAN CLASS="ecomment"> attached to an object considered</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> equal to current object?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">symmetric</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">~</SPAN> <SPAN CLASS="ekeyword">Current</SPAN>
+			<SPAN CLASS="etag">consistent</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="ekeyword">Result</SPAN>
+
+	<A NAME="f_standard_equal"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_equal">standard_equal</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">like</SPAN> arg #<SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Are </SPAN>`a'<SPAN CLASS="ecomment"> and </SPAN>`b'<SPAN CLASS="ecomment"> either both void or attached to</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> field-by-field identical objects of the same type?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Always uses default object comparison criterion.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">definition</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted">and</A> <SPAN CLASS="elocal">b</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_disjuncted_semistrict">or else</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted">and</A> <SPAN CLASS="elocal">b</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted_semistrict">and then</A> <SPAN CLASS="elocal">a</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_standard_is_equal"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Is </SPAN>`other'<SPAN CLASS="ecomment"> attached to an object of the same type</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> as current object, and field-by-field identical to it?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">same_type</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_same_type">same_type</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="etag">symmetric</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_implication">implies</A> <SPAN CLASS="elocal">other</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Status report</SPAN>
+
+	<A NAME="f_conforms_to"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_conforms_to">conforms_to</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Does type of current object conform to type</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> of </SPAN>`other'<SPAN CLASS="ecomment"> (as per Eiffel: The Language, chapter 13)?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+
+	<A NAME="f_same_type"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_same_type">same_type</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean_flatshort.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Is type of current object identical to type of </SPAN>`other'<SPAN CLASS="ecomment">?</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">definition</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">=</SPAN> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_conforms_to">conforms_to</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean_flatshort.html#f_conjuncted">and</A> <SPAN CLASS="elocal">other</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_conforms_to">conforms_to</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Duplication</SPAN>
+
+	<A NAME="f_copy"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_copy">copy</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Update current object using fields of object attached</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> to </SPAN>`other'<SPAN CLASS="ecomment">, so as to yield equal objects.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+			<SPAN CLASS="etag">type_identity</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_same_type">same_type</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">is_equal</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Current</SPAN> <SPAN CLASS="esymbol">~</SPAN> <SPAN CLASS="elocal">other</SPAN>
+
+	<A NAME="f_deep_copy"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_copy">deep_copy</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Effect equivalent to that of:</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment">		</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_copy">copy</A><SPAN CLASS="ecomment"> (</SPAN>`other'<SPAN CLASS="ecomment"> . </SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_twin">deep_twin</A><SPAN CLASS="ecomment">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">deep_equal</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_equal">deep_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_deep_twin"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_twin">deep_twin</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> New object structure recursively duplicated from Current.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">deep_twin_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+			<SPAN CLASS="etag">deep_equal</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_deep_equal">deep_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_standard_copy"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_copy">standard_copy</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Copy every field of </SPAN>`other'<SPAN CLASS="ecomment"> onto corresponding field</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> of current object.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">require</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">other_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="elocal">other</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+			<SPAN CLASS="etag">type_identity</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_same_type">same_type</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">is_standard_equal</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">other</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_standard_twin"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_twin">standard_twin</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> New object field-by-field identical to </SPAN>`other'<SPAN CLASS="ecomment">.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Always uses default copying semantics.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">standard_twin_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+			<SPAN CLASS="etag">equal</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_equal">standard_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Result</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+	<A NAME="f_twin"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_twin">twin</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> New object equal to </SPAN>`Current'
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> </SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_twin">twin</A><SPAN CLASS="ecomment"> calls </SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_copy">copy</A><SPAN CLASS="ecomment">; to change copying/twining semantics, redefine </SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_copy">copy</A><SPAN CLASS="ecomment">.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">twin_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+			<SPAN CLASS="etag">is_equal</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">~</SPAN> <SPAN CLASS="ekeyword">Current</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Basic operations</SPAN>
+
+	<A NAME="f_as_attached"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_as_attached">as_attached</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Attached version of Current</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> (Can be used during transitional period to convert</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> non-void-safe classes to void-safe ones.)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+
+	<A NAME="f_default"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_default">default</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Default value of object's type</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+
+	<A NAME="f_default_pointer"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_default_pointer">default_pointer</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Default value of type </SPAN>`POINTER'
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> (Avoid the need to write </SPAN>`p'<SPAN CLASS="ecomment">.</SPAN><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_default">default</A><SPAN CLASS="ecomment"> for</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> some </SPAN>`p'<SPAN CLASS="ecomment"> of type </SPAN>`POINTER'<SPAN CLASS="ecomment">.)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+
+	<A NAME="f_default_rescue"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_default_rescue">default_rescue</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Process exception for routines with no Rescue clause.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> (Default: do nothing.)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+
+	<A NAME="f_do_nothing"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_do_nothing">do_nothing</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Execute a null action.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction LoadMUS de la libraire SDL_mixer</SPAN>
+
+	<A NAME="f_mix_loadmus"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_loadmus">mix_loadmus</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">file</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction Mix_CloseAusio de la librairie SDL</SPAN>
+
+	<A NAME="f_mix_closeaudio"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_closeaudio">mix_closeaudio</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction Mix_OpenAudio de la librairie SDL</SPAN>
+
+	<A NAME="f_mix_openaudio"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_openaudio">mix_openaudio</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">frequency</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">format</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_16_flatshort.html">NATURAL_16</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">channels</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">chunksize</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction PlayMusic de la libraire SDL_mixer</SPAN>
+
+	<A NAME="f_mix_playmusic"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_playmusic">mix_playmusic</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">music</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">loops</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_BlitSurface de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_blitsurface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_blitsurface">sdl_blitsurface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">src</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">srcect</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">dst</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">dstrect</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_Delay de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_delay"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_delay">sdl_delay</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">ms</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A><SPAN CLASS="esymbol">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_Flip de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_flip"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_flip">sdl_flip</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">screen</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_LoadBMP de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_loadbmp"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_loadbmp">sdl_loadbmp</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">file</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_MapRGB de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_maprgb"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_maprgb">sdl_maprgb</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_pixelformat</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">r</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">g</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">b</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_PollEvent de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_pollevent"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_pollevent">sdl_pollevent</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_event</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_Quit de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_quit"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_quit">sdl_quit</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_SWSURFACE de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_swsurface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_swsurface">sdl_swsurface</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_SetColorKey de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_keyup_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_keyup_const">sdl_keyup_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A>
+
+	<A NAME="f_sdl_setcolorkey"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_setcolorkey">sdl_setcolorkey</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">flag</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">key</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_SetVideoMode de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_setvideomode"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_setvideomode">sdl_setvideomode</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">width</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">heigth</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">bitsperpixel</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">flags</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_WM_SetCaption de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_wm_setcaption"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_wm_setcaption">sdl_wm_setcaption</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">title</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">icon</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_init de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_init"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_init">sdl_init</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">flags</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_init_audio de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_init_audio"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_init_audio">sdl_init_audio</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction SDL_init_video de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_init_video"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_init_video">sdl_init_video</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction TTF_OpenFont de la librairie SDL_TTF</SPAN>
+
+	<A NAME="f_ttf_openfont"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_ttf_openfont">ttf_openfont</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">file</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">ptsize</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction TTF_Quit de la librairie SDL_TTF</SPAN>
+
+	<A NAME="f_ttf_quit"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_ttf_quit">ttf_quit</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction TTF_RenderText_Blended de la libraire SDL_TTF</SPAN>
+
+	<A NAME="f_ttf_rendertext_blended"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_ttf_rendertext_blended">ttf_rendertext_blended</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">font</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">text</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">fg</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction TTF_init de la librairie SDL_TTF</SPAN>
+
+	<A NAME="f_ttf_init"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_ttf_init">ttf_init</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Fonction mix_init de la librairie SDL_mixer</SPAN>
+
+	<A NAME="f_mix_init"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_init">mix_init</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">flags</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32_flatshort.html">NATURAL_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Output</SPAN>
+
+	<A NAME="f_io"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_io">Io</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/std_files_flatshort.html">STD_FILES</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Handle to standard file setup</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">io_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+
+	<A NAME="f_out"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_out">out</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_flatshort.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> New string containing terse printable representation</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> of current object</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">out_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+
+	<A NAME="f_print"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_print">print</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">o</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Write terse external representation of </SPAN>`o'
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> on standard output.</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+
+	<A NAME="f_tagged_out"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_tagged_out">tagged_out</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8_flatshort.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> New string containing terse printable representation</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> of current object</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">tagged_out_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Platform</SPAN>
+
+	<A NAME="f_operating_environment"></A><A CLASS="efeature" HREF="../elks/any_flatshort.html#f_operating_environment">Operating_environment</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/operating_environment_flatshort.html">OPERATING_ENVIRONMENT</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Objects available from the operating system</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">(from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A><SPAN CLASS="ecomment">)</SPAN>
+		<SPAN CLASS="ekeyword">ensure</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+			<SPAN CLASS="etag">operating_environment_not_void</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">/=</SPAN> <SPAN CLASS="ekeyword">Void</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDLK_ESCAPE</SPAN>
+
+	<A NAME="f_sdlk_escape_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdlk_escape_const">sdlk_escape_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDLK_LEFT</SPAN>
+
+	<A NAME="f_sdlk_left_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdlk_left_const">sdlk_left_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDLK_RIGHT</SPAN>
+
+	<A NAME="f_sdlk_right_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdlk_right_const">sdlk_right_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDLK_SPACE</SPAN>
+
+	<A NAME="f_sdlk_space_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdlk_space_const">sdlk_space_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDLK_UP</SPAN>
+
+	<A NAME="f_sdlk_up_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdlk_up_const">sdlk_up_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDL_KeyDown</SPAN>
+
+	<A NAME="f_sdl_keydown_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_keydown_const">sdl_keydown_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDL_Quit</SPAN>
+
+	<A NAME="f_sdl_quit_const"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_quit_const">sdl_quit_const</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Retourne la constante SDL_SrcColorKey</SPAN>
+
+	<A NAME="f_sdl_srccolorkey"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_srccolorkey">sdl_srccolorkey</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Sizeof - SDL_Event</SPAN>
+
+	<A NAME="f_sizeof_sdl_event"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sizeof_sdl_event">sizeof_sdl_event</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> La taille d'une structure SDL_Event en octet.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Sizeof - SDL_Rect</SPAN>
+
+	<A NAME="f_sizeof_sdl_rect"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sizeof_sdl_rect">sizeof_sdl_rect</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> La taille d'une structure SDL_Rect en octet.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Getter Key from SDL_Event</SPAN>
+
+	<A NAME="f_get_key_from_event"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_key_from_event">get_key_from_event</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">event</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Getter KeySym from SDL_KeyboardEvent</SPAN>
+
+	<A NAME="f_get_keysym_from_keyboardevent"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_keysym_from_keyboardevent">get_keysym_from_keyboardevent</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">keyboardevent</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Getter PixelFormat from SDL_Surface- SDL.h</SPAN>
+
+	<A NAME="f_get_format_from_sdl_surface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_format_from_sdl_surface">get_format_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Le champ PixelFormat de la structure </SPAN>`SDL_Surface'
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Getter Sym from SDL_KeySym</SPAN>
+
+	<A NAME="f_get_sym_from_keysym"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_sym_from_keysym">get_sym_from_keysym</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">keysym</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Getter h SDL_Surface- SDL.h</SPAN>
+
+	<A NAME="f_get_h_from_sdl_surface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_h_from_sdl_surface">get_h_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Le champ image_height de la structure </SPAN>`SDL_Surface'
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Getter w SDL_Surface- SDL.h</SPAN>
+
+	<A NAME="f_get_w_from_sdl_surface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_w_from_sdl_surface">get_w_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Le champ image_width de la structure </SPAN>`SDL_Surface'
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Setter h SDL_Surface- SDL.h</SPAN>
+
+	<A NAME="f_set_h_from_sdl_surface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_h_from_sdl_surface">set_h_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ err la structure C </SPAN>`SDL_Surface'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Setter r SDL_Color- SDL.h</SPAN>
+
+	<A NAME="f_set_b_from_sdl_color"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_b_from_sdl_color">set_b_from_sdl_color</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_color</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ b de la structure C </SPAN>`SDL_Color'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+
+	<A NAME="f_set_g_from_sdl_color"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_g_from_sdl_color">set_g_from_sdl_color</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_color</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ g de la structure C </SPAN>`SDL_Color'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+
+	<A NAME="f_set_r_from_sdl_color"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_r_from_sdl_color">set_r_from_sdl_color</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_color</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ r de la structure C </SPAN>`SDL_Color'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Setter w SDL_Surface- SDL.h</SPAN>
+
+	<A NAME="f_set_w_from_sdl_surface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_w_from_sdl_surface">set_w_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ err la structure C </SPAN>`SDL_Surface'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Setter x SDL_Rect - SDL.h</SPAN>
+
+	<A NAME="f_set_w_from_sdl_rect"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_w_from_sdl_rect">set_w_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_rect</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_16_flatshort.html">NATURAL_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ err la structure C </SPAN>`SDL_Rect'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+
+	<A NAME="f_set_x_from_sdl_rect"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_x_from_sdl_rect">set_x_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_rect</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_16_flatshort.html">INTEGER_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ err la structure C </SPAN>`SDL_Rect'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Structure Setter y SDL_Rect - SDL.h</SPAN>
+
+	<A NAME="f_set_h_from_sdl_rect"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_h_from_sdl_rect">set_h_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_rect</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_16_flatshort.html">NATURAL_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ err la structure C </SPAN>`SDL_Rect'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+
+	<A NAME="f_set_y_from_sdl_rect"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_set_y_from_sdl_rect">set_y_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_rect</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">value</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_16_flatshort.html">INTEGER_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Modifie le champ err la structure C </SPAN>`SDL_Rect'<SPAN CLASS="ecomment"> par la valeur </SPAN>`value'<SPAN CLASS="ecomment">.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> constante MIX_DEFAULT_FORMAT</SPAN>
+
+	<A NAME="f_mix_default_format"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_default_format">mix_default_format</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_16_flatshort.html">NATURAL_16</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> function SDL_FreeSurface de la librairie SDL</SPAN>
+
+	<A NAME="f_sdl_freesurface"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sdl_freesurface">sdl_freesurface</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_surface</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> sizeof de la structure SDL_COLOR</SPAN>
+
+	<A NAME="f_sizeof_sdl_color"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_sizeof_sdl_color">sizeof_sdl_color</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> La taille d'une structure SDL_Color en octet.</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> structure getter type SDL_Event</SPAN>
+
+	<A NAME="f_get_type_from_sdl_event"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_get_type_from_sdl_event">get_type_from_sdl_event</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sdl_event</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8_flatshort.html">NATURAL_8</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> wrapper Load_WAV</SPAN>
+
+	<A NAME="f_mix_loadwav"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_loadwav">mix_loadwav</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">fname</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> wrapper Mix_FreeChunk</SPAN>
+
+	<A NAME="f_mix_freechunk"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_freechunk">mix_freechunk</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">mix_chunk</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> wrapper Play_Channel</SPAN>
+
+	<A NAME="f_mix_playchannel"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_playchannel">mix_playchannel</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">channel</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">chunk</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer_flatshort.html">POINTER</A><SPAN CLASS="esymbol">;</SPAN> <SPAN CLASS="elocal">loops</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> wrapper halt_channel</SPAN>
+
+	<A NAME="f_mix_haltchannel"></A><SPAN CLASS="ekeyword">frozen</SPAN> <A CLASS="efeature" HREF="../remise2/rapper_flatshort.html#f_mix_haltchannel">mix_haltchannel</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">channel</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32_flatshort.html">INTEGER_32</A>
+	
+<SPAN CLASS="ekeyword">invariant</SPAN>
+		<SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">from </SPAN><A CLASS="eclass" HREF="../elks/any_flatshort.html">ANY</A>
+	<SPAN CLASS="etag">reflexive_equality</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_standard_is_equal">standard_is_equal</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN>
+	<SPAN CLASS="etag">reflexive_conformance</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="efeature" HREF="../elks/any_flatshort.html#f_conforms_to">conforms_to</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="ekeyword">Current</SPAN><SPAN CLASS="esymbol">)</SPAN>
+
+<SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">copyright</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Copyright - Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">licence</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;GPL 3.0 (see </SPAN><A CLASS="estring" HREF="http://www.gnu.org/licences/gpl-3.0.txt">http://www.gnu.org/licences/gpl-3.0.txt</A><SPAN CLASS="estring">)&quot;</SPAN>
+	<SPAN CLASS="eitag">source</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Samuel Forcier						David Lafrenière</SPAN>
+		<SPAN CLASS="estring">Étudiant Cégep de Drummondville		Étudiant Cégep de Drummondville</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../remise2/rapper_flatshort.html">RAPPER</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_links.html">Relations</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper.html">Text</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_flat.html">Flat</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="rapper_short.html">Contracts</A></TD>
+<TD CLASS="nolink2">Flat contracts</TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="rapper"></TD>
+</TR></TABLE></FORM></pre>
+</article>
+</div>
+</div>
+<footer>
+<div class="owner">
+<p><a href="https://github.com/uknn" class="avatar"><img src="https://secure.gravatar.com/avatar/a0f7e1435e39437727876e18c9bff733?s=30&amp;d=https://a248.e.akamai.net/assets.github.com2Fimages2Fgravatars2Fgravatar-user-420.png" width="48" height="48"/></a>
+<a href="https://github.com/uknn">uknn</a> maintains <a href="https://github.com/uknn/documentation">Documentation</a></p>
+</div>
+<div class="creds">
+<small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+</div>
+</footer>
+</div>
+<div class="current-section">
+<a href="#top">Scroll to top</a>
+<a href="https://github.com/uknn/documentation/tarball/master" class="tar">tar</a><a href="https://github.com/uknn/documentation/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+<p class="name"></p>
+</div>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+

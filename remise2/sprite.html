@@ -1,0 +1,276 @@
+<HTML>
+<HEAD>
+<META NAME="generator" CONTENT="ISE EiffelStudio version 7.1.8.8986 GPL Edition - windows">
+<meta name="description" content="TTTTTFait afficher Ã  l'Ã©cran les divers sprites TTTTTAffiche Ã  l'Ã©cran les sprites qui lui sont envoyÃ© par les classes appropriÃ© (megaman,background etc.) et contient aussi les coordonnÃ©es des divers sprites "/>
+<meta name="author" content="Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="date" content="25 mars 2013"/>
+<meta name="revision" content="1.0"/>
+<meta name="keywords" content="Eiffel class"/>
+<meta name="copyright" content="Copyright - Samuel Forcier - David LafreniÃ¨re"/>
+<meta name="licence" content="GPL 3.0 (see http://www.gnu.org/licences/gpl-3.0.txt)"/>
+<meta name="source" content="Samuel ForcierTTTTTTDavid LafreniÃ¨re Ã/137/tudiant CÃ©gep de DrummondvilleTTÃ/137/tudiant CÃ©gep de Drummondville"/>
+<meta name="keywords" content="Eiffel class"/>
+<TITLE>sprite Text</TITLE>
+<LINK REL="stylesheet" HREF="../default.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../stylesheet.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../pygment_trac.css" TYPE="text/css">
+<SCRIPT TYPE="text/javascript" SRC="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../javascripts/script.js"></SCRIPT>
+<SCRIPT TYPE="text/javascript" SRC="../goto.html"></SCRIPT>
+</HEAD>
+<BODY>
+<div class="wrapper">
+<header>
+<h1 class="title">Documentation</h1>
+</header>
+<div id="container">
+<p class="tagline"></p>
+<div id="main" role="main">
+<div class="download-bar">
+<div class="inner">
+<a href="http://uknn.github.io/documentation/index.html" class="button"><span>Acceuil</span></a>
+<a href="http://uknn.github.io/documentation/media.html" class="button"><span>Media</span></a>
+<a href="http://uknn.github.io/documentation/doc.html" class="button"><span>Documentation</span></a>
+<a href="http://uknn.github.io/documentation/dev.html" class="button"><span>Developpeur</span></a>
+<a href="http://uknn.github.io/documentation/licence.html" class="button"><span>Licence</span></a>
+<a href="http://uknn.github.io/documentation/download.html" class="download-button"><span>Download</span></a>
+</div>
+<span class="blc"></span><span class="trc"></span>
+</div>
+<article class="markdown-body">
+<pre><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_flat.html">Flat</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_short.html">Contracts</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="sprite"></TD>
+</TR></TABLE></FORM><SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">description</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">					Fait afficher à l'écran les divers sprites</SPAN>
+		<SPAN CLASS="estring">					Affiche à l'écran les sprites qui lui sont envoyé par les classes approprié (megaman,background etc.) et contient aussi les coordonnées des divers sprites</SPAN>
+		
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+	<SPAN CLASS="eitag">author</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">date</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;25 mars 2013&quot;</SPAN>
+	<SPAN CLASS="eitag">revision</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;1.0&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">deferred</SPAN> <SPAN CLASS="ekeyword">class</SPAN> 
+	<A CLASS="eclass" HREF="../remise2/sprite.html">SPRITE</A>
+
+<SPAN CLASS="ekeyword">inherit</SPAN>
+	<A CLASS="eclass" HREF="../elks/disposable.html">DISPOSABLE</A>
+
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> initialise les parametre par defaut d'un texte</SPAN>
+
+	<A NAME="f_initialise_text"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_initialise_text">initialise_text</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_chemin</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8.html">STRING_8</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string.html">C_STRING</A>
+			<SPAN CLASS="elocal">l_r</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8.html">NATURAL_8</A>
+			<SPAN CLASS="elocal">l_g</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8.html">NATURAL_8</A>
+			<SPAN CLASS="elocal">l_b</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_8.html">NATURAL_8</A>
+			<SPAN CLASS="elocal">l_texte_c</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string.html">C_STRING</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_chemin</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_text_size">text_size</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">26</SPAN>
+			<SPAN CLASS="elocal">l_r</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_8">to_natural_8</A>
+			<SPAN CLASS="elocal">l_g</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_8">to_natural_8</A>
+			<SPAN CLASS="elocal">l_b</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_8">to_natural_8</A>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A> <SPAN CLASS="esymbol">:=</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/pointer_ref.html#f_memory_calloc">memory_calloc</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sizeof_sdl_color">sizeof_sdl_color</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_r_from_sdl_color">set_r_from_sdl_color</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_r</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_g_from_sdl_color">set_g_from_sdl_color</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_g</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_b_from_sdl_color">set_b_from_sdl_color</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_b</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_ttf_font">ttf_font</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_ttf_openfont">ttf_openfont</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_item">item</A><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_text_size">text_size</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">l_texte_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_texte">texte</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_ttf_rendertext_blended">ttf_rendertext_blended</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ttf_font">ttf_font</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_texte_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_item">item</A><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_x_rect">x_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_y_rect">y_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_w_from_sdl_surface">get_w_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_h_from_sdl_surface">get_h_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> modifie le texte d'un object texte</SPAN>
+
+	<A NAME="f_modifie_texte"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_modifie_texte">modifie_texte</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_texte</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8.html">STRING_8</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_texte_c</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string.html">C_STRING</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">l_texte_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_texte</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_ttf_rendertext_blended">ttf_rendertext_blended</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ttf_font">ttf_font</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_texte_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_item">item</A><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_w_from_sdl_surface">get_w_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_h_from_sdl_surface">get_h_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="esymbol">{</SPAN>NONE<SPAN CLASS="esymbol">}</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Initialise les parametre par defaut d'un sprite</SPAN>
+
+	<A NAME="f_initialize"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_initialize">initialize</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_chemin</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8.html">STRING_8</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Initialise les parametre par defaut d'un sprite	</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string.html">C_STRING</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">create</SPAN> <SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_make">make</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_chemin</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_loadbmp">sdl_loadbmp</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/c_string.html#f_item">item</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_x_rect">x_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_y_rect">y_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="enumber">0</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_w_from_sdl_surface">get_w_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_h_from_sdl_surface">get_h_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+	
+<SPAN CLASS="ekeyword">feature</SPAN> <SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment">Affiche un sprite</SPAN>
+
+	<A NAME="f_sprite_affiche"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_sprite_affiche">sprite_affiche</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">a_screen</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment">Affiche un sprite</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_screen</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_null</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="elocal">l_inutile</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+			<SPAN CLASS="elocal">l_chemin_c</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/c_string.html">C_STRING</A>
+			<SPAN CLASS="elocal">l_rect_src</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="elocal">l_screen</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">a_screen</SPAN>
+			<SPAN CLASS="elocal">l_targetarea</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/pointer_ref.html#f_memory_calloc">memory_calloc</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sizeof_sdl_rect">sizeof_sdl_rect</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="elocal">l_rect_src</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/pointer_ref.html#f_memory_calloc">memory_calloc</A><SPAN CLASS="esymbol"> </SPAN><SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sizeof_sdl_rect">sizeof_sdl_rect</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">1</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_x_from_sdl_rect">set_x_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/real_32.html#f_truncated_to_integer">truncated_to_integer</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_as_integer_16">as_integer_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_y_from_sdl_rect">set_y_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/real_32.html#f_truncated_to_integer">truncated_to_integer</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_as_integer_16">as_integer_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_w_from_sdl_rect">set_w_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_16">to_natural_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_h_from_sdl_rect">set_h_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_16">to_natural_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_x_from_sdl_rect">set_x_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_rect_src</SPAN><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_x_rect">x_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_as_integer_16">as_integer_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_y_from_sdl_rect">set_y_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_rect_src</SPAN><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_y_rect">y_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_as_integer_16">as_integer_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_w_from_sdl_rect">set_w_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_rect_src</SPAN><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_as_natural_16">as_natural_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_set_h_from_sdl_rect">set_h_from_sdl_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_rect_src</SPAN><SPAN CLASS="esymbol">,</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_as_natural_16">as_natural_16</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="elocal">l_inutile</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_blitsurface">sdl_blitsurface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_rect_src</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_screen</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="elocal">l_targetarea</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/pointer_ref.html#f_memory_free">memory_free</A>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_transparency"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_set_transparency">set_transparency</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Defini la transparence d'un image</SPAN>
+		<SPAN CLASS="ekeyword">local</SPAN>
+			<SPAN CLASS="elocal">l_rgb</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/natural_32.html">NATURAL_32</A>
+			<SPAN CLASS="elocal">l_format</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="elocal">l_inutile</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="elocal">l_format</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_get_format_from_sdl_surface">get_format_from_sdl_surface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="elocal">l_rgb</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_maprgb">sdl_maprgb</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">l_format</SPAN><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_8">to_natural_8</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">0</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_8">to_natural_8</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="enumber">255</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32_ref.html#f_to_natural_8">to_natural_8</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="elocal">l_inutile</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_setcolorkey">sdl_setcolorkey</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_srccolorkey">sdl_srccolorkey</A><SPAN CLASS="esymbol">,</SPAN> <SPAN CLASS="elocal">l_rgb</SPAN><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_dispose"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_dispose">dispose</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Libère un image de la mémoire</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="esymbol">{</SPAN><A CLASS="eclass" HREF="../remise2/rapper.html">RAPPER</A><SPAN CLASS="esymbol">}</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/rapper.html#f_sdl_freesurface">sdl_freesurface</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">)</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_set_x_rect"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_set_x_rect">set_x_rect</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">nouveaux</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A><SPAN CLASS="esymbol">)</SPAN>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> assignateur de la variable x_rect</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<A CLASS="efeature" HREF="../remise2/sprite.html#f_x_rect">x_rect</A> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="elocal">nouveaux</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_mr_collision"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_mr_collision">mr_collision</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../remise2/sprite.html">SPRITE</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/boolean.html">BOOLEAN</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> gestionnaire de collision entre 2 sprites. Retourne une valeur boolean true si il y a collision</SPAN>
+		<SPAN CLASS="ekeyword">do</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">25</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">15</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">10</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">20</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_w">w</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">25</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_w">w</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">15</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">10</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">20</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_w">w</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">25</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_w">w</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">15</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_h">h</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">10</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_h">h</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">20</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+			<SPAN CLASS="ekeyword">if</SPAN> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">25</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">15</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_h">h</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/comparable.html#f_is_greater">&gt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="enumber">10</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="ekeyword" HREF="../elks/boolean.html#f_conjuncted">and</A> <SPAN CLASS="esymbol">(</SPAN><SPAN CLASS="esymbol">(</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <A CLASS="efeature" HREF="../remise2/sprite.html#f_h">h</A><SPAN CLASS="esymbol">)</SPAN> <A CLASS="esymbol" HREF="../elks/real_32.html#f_is_less">&lt;</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_plus">+</A> <SPAN CLASS="elocal">sprite</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A> <A CLASS="esymbol" HREF="../elks/real_32.html#f_minus">-</A> <SPAN CLASS="enumber">20</SPAN><SPAN CLASS="edot">.</SPAN><A CLASS="efeature" HREF="../elks/integer_32.html#f_to_real">to_real</A><SPAN CLASS="esymbol">)</SPAN> <SPAN CLASS="ekeyword">then</SPAN>
+				<SPAN CLASS="ekeyword">Result</SPAN> <SPAN CLASS="esymbol">:=</SPAN> <SPAN CLASS="ekeyword">True</SPAN>
+			<SPAN CLASS="ekeyword">end</SPAN>
+		<SPAN CLASS="ekeyword">end</SPAN>
+
+	<A NAME="f_x"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_x">x</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/real_32.html">REAL_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> X d'un sprite</SPAN>
+
+	<A NAME="f_y"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_y">y</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/real_32.html">REAL_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Y d'un sprite</SPAN>
+
+	<A NAME="f_w"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_w">w</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/real_32.html">REAL_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Largeur d'un sprite</SPAN>
+
+	<A NAME="f_h"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_h">h</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/real_32.html">REAL_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Hauteur d'un sprite</SPAN>
+
+	<A NAME="f_ptr"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_ptr">ptr</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur vers l'image d'un sprite</SPAN>
+
+	<A NAME="f_x_rect"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_x_rect">x_rect</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A> <SPAN CLASS="ekeyword">assign</SPAN> <A CLASS="efeature" HREF="../remise2/sprite.html#f_set_x_rect">set_x_rect</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Coordonnée X du rectangle à afficher</SPAN>
+
+	<A NAME="f_y_rect"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_y_rect">y_rect</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Coordonnée X du rectangle à afficher</SPAN>
+
+	<A NAME="f_w_rect"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_w_rect">w_rect</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Largeur du rectangle à afficher</SPAN>
+
+	<A NAME="f_h_rect"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_h_rect">h_rect</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> Hauteur du rectangle à afficher</SPAN>
+
+	<A NAME="f_text_size"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_text_size">text_size</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/integer_32.html">INTEGER_32</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> taille du texte</SPAN>
+
+	<A NAME="f_ttf_font"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_ttf_font">ttf_font</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur TTF_Font</SPAN>
+
+	<A NAME="f_texte"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_texte">texte</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/string_8.html">STRING_8</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> String contenant le texte d'un sprite text à afficher</SPAN>
+
+	<A NAME="f_sdl_color"></A><A CLASS="efeature" HREF="../remise2/sprite.html#f_sdl_color">sdl_color</A><SPAN CLASS="esymbol">:</SPAN> <A CLASS="eclass" HREF="../elks/pointer.html">POINTER</A>
+			<SPAN CLASS="ecomment">--</SPAN><SPAN CLASS="ecomment"> pointeur vers la structure SDL_Color</SPAN>
+	
+<SPAN CLASS="ekeyword">note</SPAN>
+	<SPAN CLASS="eitag">copyright</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;Copyright - Samuel Forcier - David Lafrenière&quot;</SPAN>
+	<SPAN CLASS="eitag">licence</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;GPL 3.0 (see </SPAN><A CLASS="estring" HREF="http://www.gnu.org/licences/gpl-3.0.txt">http://www.gnu.org/licences/gpl-3.0.txt</A><SPAN CLASS="estring">)&quot;</SPAN>
+	<SPAN CLASS="eitag">source</SPAN><SPAN CLASS="esymbol">:</SPAN> <SPAN CLASS="estring">&quot;</SPAN><SPAN CLASS="estring">[</SPAN>
+		<SPAN CLASS="estring">Samuel Forcier						David Lafrenière</SPAN>
+		<SPAN CLASS="estring">Étudiant Cégep de Drummondville		Étudiant Cégep de Drummondville</SPAN>
+	<SPAN CLASS="estring">]</SPAN><SPAN CLASS="estring">&quot;</SPAN>
+
+<SPAN CLASS="ekeyword">end</SPAN> <SPAN CLASS="ecomment">--</SPAN> <SPAN CLASS="ecomment">class </SPAN><A CLASS="eclass" HREF="../remise2/sprite.html">SPRITE</A><FORM ONSUBMIT="go_to('../',this.c.value);return false;">
+<TABLE CELLSPACING="5" CELLPADDING="4"><TR>
+<TD CLASS="link1"><A CLASS="link1" HREF="../class_list.html">Classes</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_list.html">Clusters</A></TD>
+<TD CLASS="link1"><A CLASS="link1" HREF="../cluster_hierarchy.html">Cluster hierarchy</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_chart.html">Chart</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_links.html">Relations</A></TD>
+<TD CLASS="nolink2">Text</TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_flat.html">Flat</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_short.html">Contracts</A></TD>
+<TD CLASS="link2"><A CLASS="link2" HREF="sprite_flatshort.html">Flat contracts</A></TD>
+<TD CLASS="link2">Go to: <INPUT NAME="c" VALUE="sprite"></TD>
+</TR></TABLE></FORM></pre>
+</article>
+</div>
+</div>
+<footer>
+<div class="owner">
+<p><a href="https://github.com/uknn" class="avatar"><img src="https://secure.gravatar.com/avatar/a0f7e1435e39437727876e18c9bff733?s=30&amp;d=https://a248.e.akamai.net/assets.github.com2Fimages2Fgravatars2Fgravatar-user-420.png" width="48" height="48"/></a>
+<a href="https://github.com/uknn">uknn</a> maintains <a href="https://github.com/uknn/documentation">Documentation</a></p>
+</div>
+<div class="creds">
+<small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
+</div>
+</footer>
+</div>
+<div class="current-section">
+<a href="#top">Scroll to top</a>
+<a href="https://github.com/uknn/documentation/tarball/master" class="tar">tar</a><a href="https://github.com/uknn/documentation/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+<p class="name"></p>
+</div>
+<P ALIGN="CENTER"> &#045;&#045; Generated by ISE Eiffel &#045;&#045; 
+<BR>For more details: <A HREF="http://www.eiffel.com">www.eiffel.com</A></P>
+</BODY>
+</HTML>
+
