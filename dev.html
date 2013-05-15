@@ -45,31 +45,34 @@
 			<li>Ouvrir un terminal git</li>
 			<li>Git init</li>
 			<li>S'identifier (username, password)</li>
-			<li>Git pull https://github.com/uknn/documentation.git</li>
+			<li>git remote add origin https://github.com/uknn/documentation.git
+			<li>git pull origin master</li>
 			</ul>
 			</p>
 			<br>
 			<br>
 			<br>
-		   <p>Pour compiler sous Windows: 
-			Windows:<br>
-			- Compiler le fichier<br><br>
-			# PATH=%PATH%;C:\Program Files\Eiffel Software\EiffelStudio 7.1 GPL\gcc\windows\mingw\bin<br><br>
-			# gcc -o afficher.exe -I.\SDL-1.2.14\include\SDL -L.\SDL-12.14\bin\ -L.\SDL-1.2.14\lib -lmingw32 afficher.c .\SDL-1.2.14\lib\libSDLmain.a  .\SDL-1.2.14\lib\libSDL.dll.a<br><br>
-			# afficher.exe<br><br>
-			</p>
-			<br>
-			<br>
-			<br>
-			<p>
-			Linux:<br><br>
-			- Installer le kit de d&eacute;veloppement SDL<br><br>
-			# sudo apt-get install libSDL1.2-dev<br><br>
-			- Compiler le fichier<br><br>
-			# gcc -o afficher -I/usr/include/SDL afficher.c -lSDL<br><br>
-			- Ex&eacute;cuter le programme<br><br>
-			# ./afficher<br><br>
-			</p>
+		   ---WINDOWS--<br>
+<br>
+# télécharger la librairie SDL-1.2.14<br>
+# télécharger la librairie SDL_ttf-2.0.11<br>
+# télécharger la librairie SDL_mixer-1.2.12<br>
+# mettre les librairies dans le dossier du projet<br>
+# copier à partir des librairies : SDL.dll, SDL_mixer.dll, SDL_ttf.dll, <br>
+zlib.dll et libfreetype-6.dll et les placer à la racine du projet<br>
+# télécharger/installer/utiliser EiffelStudio 7.1<br>
+# ouvrir remise 2<br>
+# compiler<br>
+<br>
+<br>
+---LINUX---<br>
+<br>
+# sudo apt-get install libsdl-1.2-dev<br>
+# sudo apt-get install libsdl-mixer1.2-dev<br>
+# sudo apt-get install libsdl-ttf2.0-0-dev<br>
+# télécharger/installer/utiliser EiffelStudio 7.1<br>
+# ouvrir remise 2<br>
+# compiler<br>
         </article>
       </div>
     </div>
